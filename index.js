@@ -29,6 +29,6 @@ require("dns").lookup(require("os").hostname(), function (err, localhost, fam) {
 
 //Listening on port
 //opening on phone/laptop - 192.168.1.61:80 - device ipv4 address
-app.listen(port, "localhost", function () {
+app.listen(port, "192.168.0.21", function () {
   console.log("Application worker " + process.pid + " started...");
 });
