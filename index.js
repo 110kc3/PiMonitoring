@@ -4,6 +4,7 @@ var path = require("path");
 var app = express();
 
 var port = 80;
+var ip = "localhost";
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,6 +30,6 @@ require("dns").lookup(require("os").hostname(), function (err, localhost, fam) {
 
 //Listening on port
 //opening on phone/laptop - 192.168.1.61:80 - device ipv4 address
-app.listen(port, "192.168.0.21", function () {
+app.listen(port, ip, function () {
   console.log("Application worker " + process.pid + " started...");
 });
