@@ -4,7 +4,8 @@ var path = require("path");
 var app = express();
 
 var port = 80;
-var ip = "localhost";
+// var ip = "localhost";
+var ip = "192.168.0.21";
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: false }));
